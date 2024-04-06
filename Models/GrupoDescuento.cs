@@ -12,7 +12,7 @@ namespace Proyecto_PROGRA.Models
     {
         [Key]
 
-        public int GrupoDescuentoId { get; set; }
+        public int GrupodescuentoId { get; set; }
 
         [Required]
         [StringLength(50)]

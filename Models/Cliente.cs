@@ -26,17 +26,17 @@ namespace Proyecto_PROGRA.Models
         [StringLength(50)]
         public string Apellidos { get; set; }
 
-        [ForeignKey("GrupoDescuento")]
+        [Required]
+
+        [ForeignKey("GrupoDescuentoId")]
         public int GrupoDescuentoId { get; set; }
         public virtual GrupoDescuento GrupoDescuento { get; set; }
 
-        [ForeignKey("CondicionPago")]
-        public int CondicionPagoId { get; set; } // Corregido el nombre de la propiedad
-
+        [ForeignKey("CondicionPagoId")]
+        public int CondicionPagoId { get; set; }
         public virtual CondicionPag CondicionPago { get; set; }
 
         public bool Estado { get; set; }
-
         [Required]
         public DateTime FechaCreacion { get; set; }
     }

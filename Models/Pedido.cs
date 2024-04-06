@@ -12,17 +12,24 @@ namespace Proyecto_PROGRA.Models
     {
         [Key]
 
-        public int PedidoId { get; set; }
-        [ForeignKey("ClienteId")]
-        public int ClienteId { get; set; }
-        public virtual Cliente Cliente { get; set; }
-        public DateTime FechaCreacion { get; set; }
-        public DateTime FechaPedido { get; set; }
+        public int GrupodescuentoId { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Codigo { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Descripcion { get; set; }
+
         [Required]
         public bool Estado { get; set; }
 
-        public decimal Total { get; set; }
-        public decimal SubTotal { get; set; }
-        public decimal Descuento { get; set; }
+        [Required]
+        public int Porcentaje { get; set; }
+
+        [Required]
+
+        public DateTime FechaCreacion { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace Proyecto_PROGRA.Models
     [Table("Categoría")]
     public class Categoría
     {
-         
+
         [Key]
         public int CategoriaId { get; set; }
 
@@ -27,7 +27,6 @@ namespace Proyecto_PROGRA.Models
 
         [Required]
         public DateTime FechaCreacion { get; set; }
-
     }
 
 }
