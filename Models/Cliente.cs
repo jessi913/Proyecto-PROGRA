@@ -7,6 +7,7 @@ using System.Web;
 
 namespace Proyecto_PROGRA.Models
 {
+    
     [Table("Cliente")]
     public class Cliente
     {
@@ -25,18 +26,19 @@ namespace Proyecto_PROGRA.Models
         [StringLength(50)]
         public string Apellidos { get; set; }
 
-        [Required]
-
-        [ForeignKey("GrupoDescuentoId")]
+        [ForeignKey("GrupoDescuento")]
         public int GrupoDescuentoId { get; set; }
         public virtual GrupoDescuento GrupoDescuento { get; set; }
 
-        [ForeignKey("CondicionPagoId")]
-        public int CondicionPagoId { get; set; }
+        [ForeignKey("CondicionPago")]
+        public int CondicionPagoId { get; set; } // Corregido el nombre de la propiedad
+
         public virtual CondicionPag CondicionPago { get; set; }
 
         public bool Estado { get; set; }
+
         [Required]
         public DateTime FechaCreacion { get; set; }
     }
 }
+     
