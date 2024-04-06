@@ -39,7 +39,7 @@ namespace Proyecto_PROGRA.Database
         public DbSet<Pedido> Pedido { get; set; }
         public DbSet<PedidoDetalle> PedidoDetalle { get; set; }
         public DbSet<Producto> Producto { get; set; }
-
+        public DbSet<UnidadMedida> UnidadMedida { get; set; }
 
     }
 }
