@@ -7,6 +7,7 @@ using System.Web;
 
 namespace Proyecto_PROGRA.Models
 {
+    [Table("Pedido")]
     public class Pedido
     {
         [Key]
