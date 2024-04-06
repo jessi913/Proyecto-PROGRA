@@ -25,6 +25,7 @@ namespace Proyecto_PROGRA.Database
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         }
+        public DbSet<Categoria> Categoria { get; set; }
 
 
     }
