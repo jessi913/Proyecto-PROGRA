@@ -4,6 +4,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using Proyecto_PROGRA.Models;
 
 namespace Proyecto_PROGRA.Database
 {
@@ -25,7 +26,9 @@ namespace Proyecto_PROGRA.Database
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         }
-        public DbSet<Categoria> Categoria { get; set; }
+        public DbSet<Categoría> Categoria { get; set; }
+
+        public DbSet<Cliente> Cliente { get; set; }
 
 
     }
