@@ -30,6 +30,8 @@ namespace Proyecto_PROGRA.Database
 
         public DbSet<Cliente> Cliente { get; set; }
 
+        public DbSet<CondicionPag> CondicionPag { get; set; }
+
 
     }
 }
