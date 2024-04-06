@@ -35,6 +35,8 @@ namespace Proyecto_PROGRA.Database
         public DbSet<Factura> Factura { get; set; }
 
         public DbSet<FacturaDetalle> FacturaDetalle { get; set; }
+        public DbSet<GrupoDescuento> GrupoDescuento { get; set; }
+
 
     }
 }
